@@ -12,8 +12,8 @@ Open System Interconnection，从上到下依次为：
 - 数据链路层：建立逻辑连接、进行硬件地址寻址、差错校验等功能。将比特组合成字节进而组合成帧，用**MAC 地址**访问介质，错误发现但不能纠正。
 - 物理层：建立、维护、断开物理连接。
 
-![OSI_1](.\images\OSI_1.png)
+![OSI_1](images/OSI_1.png)
 
-![OSI_2](.\images\OSI_2.png)
+![OSI_2](images/OSI_2.png)
 
-![OSI_3](.\images\OSI_3.png)
+![OSI_3](images/OSI_3.png)
