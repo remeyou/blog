@@ -277,7 +277,7 @@ NaN 是一个特殊值，它和自身不相等，是唯一一个非自反（自�
 
 判断其中一方是否为 `object` 且另一方为 `string`、`number` 或者 `symbol`，是的话就会把 `object` 转为原始类型再进行判断
 
-![equal_judgement](.\images\equal_judgement.png)
+![equal_judgement](images/equal_judgement.png)
 
 ## 其他值到字符串的转换规则？
 
@@ -371,7 +371,7 @@ objectFactory(构造函数, 初始化参数);
 
 ## map 和 object 的区别
 
-![map_object_difference](.\images\map_object_difference.png)
+![map_object_difference](images/map_object_difference.png)
 
 map 和 weakMap 的区别
 
@@ -541,7 +541,7 @@ JSON 是一种基于文本的轻量级的数据交换格式。它可以被任何
 
 来看一下具体的 `Unicode`编号范围与对应的 `UTF-8`二进制格式 ：
 
-![utf-8_format](.\images\utf-8_format.png)
+![utf-8_format](images/utf-8_format.png)
 
 那该如何通过具体的 `Unicode`编码，进行具体的 `UTF-8`编码呢？**步骤如下：**
 
@@ -608,7 +608,7 @@ JSON 是一种基于文本的轻量级的数据交换格式。它可以被任何
 
 常见的位运算有以下几种：
 
-![binary_calc](.\images\binary_calc.png)
+![binary_calc](images/binary_calc.png)
 
 ### 1. 按位与运算符（&）
 
@@ -900,7 +900,7 @@ fetch 的缺点：
 
 ## 数组的遍历方法有哪些
 
-![array_functions](.\images\array_functions.png)
+![array_functions](images/array_functions.png)
 
 ## forEach 和 map 方法有什么区别
 
@@ -917,7 +917,7 @@ fetch 的缺点：
 
 **特点：** JavaScript 对象是通过引用来传递的，创建的每个新对象实体中并没有一份属于自己的原型副本。当修改原型时，与之相关的对象也会继承这一改变。
 
-![javascript_prototype](.\images\javascript_prototype.jpg)
+![javascript_prototype](images/javascript_prototype.jpg)
 
 ## 原型修改、重写
 
@@ -1053,7 +1053,7 @@ fetch 的缺点：
 
 **（7）指针指向：** let 和 const 都是 ES6 新增的用于创建变量的语法。 let 创建的变量是可以更改指针指向（可以重新赋值）。但 const 声明的变量是不允许改变指针的指向。
 
-![variable_difference](.\images\variable_difference.png)
+![variable_difference](images/variable_difference.png)
 
 ### const 对象的属性可以修改吗
 

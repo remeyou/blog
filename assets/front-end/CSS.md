@@ -44,7 +44,7 @@ display: none; opacity: 0; visibility: hidden;
 
 ### CSS 选择器及其优先级
 
-![css_selector](.\images\css_selector.png)
+![css_selector](images/css_selector.png)
 
 对于选择器的**优先级**：
 
@@ -104,7 +104,7 @@ display: none; opacity: 0; visibility: hidden;
 
 ### display 的属性值及其作用
 
-![css_display](.\images\css_display.png)
+![css_display](images/css_display.png)
 
 ### display 的 block、inline 和 inline-block 的区别
 
@@ -589,7 +589,7 @@ PostCss 在业务中的使用场景非常多：
 - `imgs.offsetTop` 是元素顶部距离文档顶部的高度（包括滚动条的距离）；
 - 内容达到显示区域的：`img.offsetTop < window.innerHeight + document.body.scrollTop;`
 
-![scroll_visible_judgement](.\images\scroll_visible_judgement.png)
+![scroll_visible_judgement](images/scroll_visible_judgement.png)
 
 ### z-index 属性在什么情况下会失效
 
@@ -1156,7 +1156,7 @@ height: 300px; background: blue; overflow: hidden; }
 
 层叠顺序，英文称作 stacking order，表示元素发生层叠时有着特定的垂直显示顺序。下面是盒模型的层叠规则：
 
-![box_stacking_order](.\images\box_stacking_order.png)
+![box_stacking_order](images/box_stacking_order.png)
 
 上图，由上到下分别是： （1）背景和边框：建立当前层叠上下文元素的背景和边框。 （2）负的 z-index：当前层叠上下文中，z-index 属性值为负的元素。 （3）块级盒：文档流内非行内级非定位后代元素。 （4）浮动盒：非定位浮动元素。 （5）行内盒：文档流内行内级非定位后代元素。 （6）z-index:0：层叠级数为 0 的定位元素。 （7）正 z-index：z-index 属性值为正的定位元素。
 
@@ -1166,7 +1166,7 @@ height: 300px; background: blue; overflow: hidden; }
 
 position 有以下属性值：
 
-![css_position_properties](.\images\css_position_properties.png)
+![css_position_properties](images/css_position_properties.png)
 
 前面三者的定位方式如下：
 
