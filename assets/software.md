@@ -13,12 +13,6 @@ ref: [一文教您使用 Sandboxie Plus 运行 QQ 桌面版](https://ericclose.g
 Arguments: -d %c%
 ```
 
-## Github 镜像网站
-
-原地址为：[https://github.com/vuejs/vue.git](https://github.com/vuejs/vue.git)
-
-则镜像为：[https://github.com.cnpmjs.org/vuejs/vue.git](https://github.com.cnpmjs.org/vuejs/vue.git)
-
 ## 7-zip
 
 ref: [https://www.cnblogs.com/conorblog/p/14543286.html](https://www.cnblogs.com/conorblog/p/14543286.html)
