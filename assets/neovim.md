@@ -90,3 +90,5 @@ That's all, open your VSCode and enjoy it.
 ## References
 
 [你真的会装 vim 插件吗？【vim-plug】详解](https://www.bilibili.com/read/cv8264341)
+
+[vim-plug](https://github.com/junegunn/vim-plug)
