@@ -39,7 +39,7 @@ Plug 'tpope/vim-repeat'
 
 call plug#end()
 
-" Making vim register sync to OS clipboard
+" Make vim register sync to OS clipboard
 " set clipboard=unnamedplus
 
 " Ignore case sensitive when search
