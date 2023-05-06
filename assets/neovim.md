@@ -30,26 +30,48 @@ nvim init.vim
 Then editing init.vim:
 
 ```plaintext
-"vim-plug config
+" vim-plug config
 call plug#begin('~/AppData/Local/nvim/plugged')
 
 Plug 'justinmk/vim-sneak'
 Plug 'tpope/vim-surround'
+Plug 'tpope/vim-repeat'
 
 call plug#end()
 
-"Make yank in vim sync to system clipboard
-"set clipboard=unnamedplus
+" Making vim register sync to OS clipboard
+" set clipboard=unnamedplus
 
-"Ignore case sensitive when search
+" Ignore case sensitive when search
 :set ignorecase
 :set smartcase
 
-"Load user custom keymaps
+" Load user custom keymaps
 lua require "user.keymaps"
 
-"Make vim-sneak list labeled for quicking jump
+" Make vim-sneak result labeled for quicking jump
 let g:sneak#label = 1
+
+" Conditional load config
+if exists('g:vscode')
+	" Vscode neovim extension configurations
+	function! s:switchEditor(...) abort
+		let count = a:1
+		let direction = a:2
+		for i in range(1, count ? count : 1)
+			call VSCodeCall(direction ==# 'next' ? 'workbench.action.nextEditorInGroup' : 'workbench.action.previousEditorInGroup')
+		endfor
+	endfunction
+
+	nnoremap K <Cmd>call <SID>switchEditor(v:count, 'next')<CR>
+	xnoremap K <Cmd>call <SID>switchEditor(v:count, 'next')<CR>
+	nnoremap J <Cmd>call <SID>switchEditor(v:count, 'prev')<CR>
+	xnoremap J <Cmd>call <SID>switchEditor(v:count, 'prev')<CR>
+else
+	" Neovim configurations
+	:set number
+	:set relativenumber
+endif
 
 ```
 
