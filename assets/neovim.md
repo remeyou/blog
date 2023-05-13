@@ -2,11 +2,11 @@
 
 Easy Neovim usage in VSCode.
 
-## Installing
+## Install
 
 VSCode plugin: [VSCode Neovim](https://marketplace.visualstudio.com/items?itemName=asvetliakov.vscode-neovim)
 
-Installing Neovim:
+Install Neovim:
 
 ```powershell
 winget install Neovim.Neovim
@@ -19,7 +19,7 @@ On Windows:
 ```bash
 # Create nvim directories
 mkdir ~/AppData/Local/nvim && cd $_
-# Installing vim-plug
+# Install vim-plug
 mkdir autoload plugged
 sh -c 'curl -fLo "~/AppData/Local/nvim/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'

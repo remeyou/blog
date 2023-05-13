@@ -1,6 +1,6 @@
 # Zsh & Starship in Windows Git Bash
 
-## Installing Zsh
+## Install Zsh
 
 1. Download MSYS2 zsh package, it's named like [zsh-5.9-2-x86_64.pkg.tar.zst](https://mirror.msys2.org/msys/x86_64/zsh-5.9-2-x86_64.pkg.tar.zst). [MSYS2 package repository](https://packages.msys2.org/package/zsh?repo=msys&variant=x86_64) is here.
 2. PeaZip or 7-Zip Beta to open ZST extension's file.
@@ -15,7 +15,7 @@
 
    ```
 
-## Installing oh-my-zsh
+## Install oh-my-zsh
 
 In the Zsh shell and run:
 
@@ -24,7 +24,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 
 ```
 
-## Installing Plugins
+## Install Plugins
 
 In the Zsh shell and run:
 
@@ -35,7 +35,7 @@ git clone https://github.com/zdharma-continuum/fast-syntax-highlighting.git ${ZS
 
 ```
 
-## Installing Starship
+## Install Starship
 
 In the Zsh shell and run:
 
