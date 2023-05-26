@@ -103,7 +103,12 @@ vim.g.maplocalleader = ' '
 map("n", "<leader>y", '"*y', opts)
 map("n", "<leader>p", '"*p', opts)
 map("n", "<leader>P", '"*P', opts)
-
+map("n", "<leader>n", 'g*', opts)
+map("n", "<leader>N", 'g#', opts)
+map("n", "<leader>h", '^', opts)
+map("n", "<leader>j", '5j', opts)
+map("n", "<leader>k", '5k', opts)
+map("n", "<leader>l", '$', opts)
 
 ```
 

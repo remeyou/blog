@@ -10,7 +10,7 @@ iterm2
 
 maccy
 
-sizeup
+rectangle
 
 vscode
 
