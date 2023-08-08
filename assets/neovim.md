@@ -23,11 +23,38 @@ mkdir ~/AppData/Local/nvim && cd $_
 mkdir autoload plugged
 sh -c 'curl -fLo "~/AppData/Local/nvim/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
-# Edit nvim config
-nvim init.vim
+# Add nvim config
+touch init.vim
+# Add key remap
+mkdir -p lua/user && cd $_
+nvim keymaps.lua
 ```
 
-Then editing init.vim:
+In keymaps.lua:
+
+```plaintext
+--print("keymap config")
+local opts = { noremap = true, silent = true }
+local map = vim.api.nvim_set_keymap
+
+--print("define leader key, default is \, here is space")
+vim.g.mapleader = ' '
+vim.g.maplocalleader = ' '
+
+--print("keymap list")
+map("n", "<leader>y", '"*y', opts)
+map("n", "<leader>p", '"*p', opts)
+map("n", "<leader>P", '"*P', opts)
+map("n", "<leader>n", 'g*', opts)
+map("n", "<leader>N", 'g#', opts)
+map("n", "<leader>h", '^', opts)
+map("n", "<leader>j", '5j', opts)
+map("n", "<leader>k", '5k', opts)
+map("n", "<leader>l", '$', opts)
+
+```
+
+Finally editing init.vim:
 
 ```plaintext
 " vim-plug config
@@ -81,38 +108,7 @@ Save & exit `init.vim`, then open any file by nvim, run:
 :PlugInstall
 ```
 
-After plugins installed, run:
-
-```plaintext
-mkdir -p lua/user && cd $_
-nvim keymaps.lua
-```
-
-In keymaps.lua:
-
-```plaintext
---print("keymap config")
-local opts = { noremap = true, silent = true }
-local map = vim.api.nvim_set_keymap
-
---print("define leader key, default is \, here is space")
-vim.g.mapleader = ' '
-vim.g.maplocalleader = ' '
-
---print("keymap list")
-map("n", "<leader>y", '"*y', opts)
-map("n", "<leader>p", '"*p', opts)
-map("n", "<leader>P", '"*P', opts)
-map("n", "<leader>n", 'g*', opts)
-map("n", "<leader>N", 'g#', opts)
-map("n", "<leader>h", '^', opts)
-map("n", "<leader>j", '5j', opts)
-map("n", "<leader>k", '5k', opts)
-map("n", "<leader>l", '$', opts)
-
-```
-
-That's all, open your VSCode and enjoy it.
+After plugins installing finished, restart your VSCode and enjoy it.
 
 ## References
 
