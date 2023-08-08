@@ -35,6 +35,19 @@ git clone https://github.com/zdharma-continuum/fast-syntax-highlighting.git ${ZS
 
 ```
 
+Edit `~/.zshrc`
+
+```diff
+- plugins=(git)
++ plugins=(
++ 	git
++	zsh-completions
++	zsh-autosuggestions
++	fast-syntax-highlighting
++ )
+
+```
+
 ## Install Starship
 
 In the Zsh shell and run:
