@@ -16,6 +16,10 @@ vscode
 
 neovim
 
+scroll reverser
+
+alt-tab-macos
+
 ## karabiner-elements
 
 `~/.config/karabiner/assets/complex_modifications`
