@@ -1,24 +1,19 @@
 # MacBook
 
-## App
+## Homebrew
 
-homebrew
+[https://brew.sh/](https://brew.sh/)
 
-karabiner-elements
+App list:
 
-iterm2
-
-maccy
-
-rectangle
-
-vscode
-
-neovim
-
-scroll reverser
-
-alt-tab-macos
+1. karabiner-elements
+2. iterm2
+3. maccy
+4. rectangle
+5. visual-studio-code
+6. neovim
+7. scroll-reverser
+8. alt-tab
 
 ## karabiner-elements
 
