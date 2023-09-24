@@ -40,10 +40,10 @@ Edit `~/.zshrc`
 ```diff
 - plugins=(git)
 + plugins=(
-+ 	git
-+	zsh-completions
-+	zsh-autosuggestions
-+	fast-syntax-highlighting
++  git
++ zsh-completions
++ zsh-autosuggestions
++ fast-syntax-highlighting
 + )
 
 ```
@@ -65,7 +65,46 @@ eval "$(starship init zsh)"
 
 Restart zsh and enjoy it.
 
-## Recommand Starship Presets
+## User profile
+
+`nvim ~/.profile`
+
+```shell
+# start proxy
+proxy () {
+ export https_proxy=http://127.0.0.1:2080 http_proxy=http://127.0.0.1:2080 all_proxy=socks5://127.0.0.1:2080
+ echo "HTTP Proxy on"
+}
+
+# close proxy
+noproxy () {
+ unset http_proxy
+ unset https_proxy
+ unset all_proxy
+ echo "HTTP Proxy off"
+}
+
+# cursor keep solid display
+echo "\e[2 q" > /dev/null
+
+# alias
+alias ~="cd ~"
+function sst() {
+ shutdown -s -t ${1:-5400}
+}
+function gac() {
+ git add . && git commit -m ${1:?except commit message, changes staged. }
+}
+```
+
+`nvim .zshrc`
+
+```diff
++ # Load user profile
++ source ~/.profile
+```
+
+## Recommend Starship Presets
 
 Select an [Presets](https://starship.rs/presets/) to custom Starship.
 

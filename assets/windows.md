@@ -120,7 +120,7 @@ ref: [https://www.cnblogs.com/conorblog/p/14543286.html](https://www.cnblogs.com
 ref: [https://tech.gjlmotea.com/2021/07/windows7-zip.html](https://tech.gjlmotea.com/2021/07/windows7-zip.html)
 指定编码解压
 
-> 7z x file.zip -mcp=936
+> 7z x file.zip -mcp=932
 > 簡中 936
 > 日文 932
 > [對照表](https://www.wikiwand.com/en/Code_page#/DOS_code_pages)
