@@ -84,9 +84,6 @@ noproxy () {
 	echo "HTTP Proxy off"
 }
 
-# cursor keep solid display
-echo "\e[2 q" > /dev/null
-
 # alias
 alias ~="cd ~"
 function sst() {
@@ -109,14 +106,30 @@ function wl() {
 function wu() {
 	winget upgrade ${1:=}
 }
+function ex() {
+	start ${1:-.}
+}
+alias re="start ~/Releases/RandomExecutor/RandomExecutor_v1.2.11.205.exe"
 
 ```
 
 `nvim .zshrc`
 
 ```diff
+  # starship config
+  eval "$(starship init zsh)"
+  starship preset plain-text-symbols > ~/.config/starship.toml
+
+  # fnm node env config
+  eval "$(fnm env --use-on-cd)"
+
 + # Load user profile
 + source ~/.profile
+
++ # cursor keep solid display, put into end of .zshrc
++ echo -e -n "\e[2 q"
+
+
 ```
 
 ## Recommend Starship Presets
