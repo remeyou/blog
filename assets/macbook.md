@@ -14,6 +14,8 @@ App list:
 6. neovim
 7. scroll-reverser
 8. alt-tab
+9. mouse-fix
+10. macgesture
 
 ## karabiner-elements
 
