@@ -1,3 +1,3 @@
 # Blog
 
-A markdown articles of my programming experience.
+The markdown documents of my programming experience.

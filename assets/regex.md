@@ -57,7 +57,7 @@
 2. {m} // 出现m次
 3. ? // 出现0次或者1次，等价于{0,1}
 4. + // 至少出现1次,等价于{1,}
-5. * // 出现人一次,等价于{0,}
+5. * // 出现任意次,等价于{0,}
 ```
 
 ##### 贪婪匹配 VS 惰性匹配
@@ -231,3 +231,7 @@ console.log("ababa abbb ababab".match(reg)); // ["abab", index: 0, input: "ababa
 let reg = /(ab)+/;
 console.log("ababa abbb ababab".match(reg)); // ["abab", "ab", index: 0, input: "ababa abbb ababab", groups: undefined]
 ```
+
+### 参考
+
+[就因为这三个知识点，我彻底学废了”正则表达式“](https://juejin.cn/post/7021672733213720613)
