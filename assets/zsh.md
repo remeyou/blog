@@ -72,42 +72,42 @@ Restart zsh and enjoy it.
 ```shell
 # start proxy
 proxy () {
-	export https_proxy=http://127.0.0.1:2080 http_proxy=http://127.0.0.1:2080 all_proxy=socks5://127.0.0.1:2080
-	echo "HTTP Proxy on"
+ export https_proxy=http://127.0.0.1:2080 http_proxy=http://127.0.0.1:2080 all_proxy=socks5://127.0.0.1:2080
+ echo "HTTP Proxy on"
 }
 
 # close proxy
 noproxy () {
-	unset http_proxy
-	unset https_proxy
-	unset all_proxy
-	echo "HTTP Proxy off"
+ unset http_proxy
+ unset https_proxy
+ unset all_proxy
+ echo "HTTP Proxy off"
 }
 
 # alias
 alias ~="cd ~"
 function sst() {
-	shutdown -s -t ${1:-5400}
+ shutdown -s -t ${1:-5400}
 }
 function gac() {
-	git add . && git commit -m ${1:?except commit message, changes staged. }
+ git add . && git commit -m ${1:?except commit message, changes staged. }
 }
 function wi() {
-	winget install ${1:?except package name. }
+ winget install ${1:?except package name. }
 }
 function wl() {
-	if [ $1 ]
-	then
-		winget ls -q $1
-	else
-		winget ls
-	fi
+ if [ $1 ]
+ then
+  winget ls -q $1
+ else
+  winget ls
+ fi
 }
 function wu() {
-	winget upgrade ${1:=}
+ winget upgrade ${1:=}
 }
 function ex() {
-	start ${1:-.}
+ start ${1:-.}
 }
 alias re="start ~/Releases/RandomExecutor/RandomExecutor_v1.2.11.205.exe"
 
