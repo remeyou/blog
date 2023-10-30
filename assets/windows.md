@@ -125,6 +125,6 @@ ref: [https://tech.gjlmotea.com/2021/07/windows7-zip.html](https://tech.gjlmotea
 > 日文 932
 > [對照表](https://www.wikiwand.com/en/Code_page#/DOS_code_pages)
 
-## Powershell 历史记录文件
+## PowerShell 历史记录文件
 
 %userprofile%\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadline\ConsoleHost_history.txt
