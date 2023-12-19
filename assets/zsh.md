@@ -70,12 +70,36 @@ Restart zsh and enjoy it.
 `nvim ~/.profile`
 
 ```shell
+home="~"
+
+# alias
+alias ~="cd ${home}"
+alias cls="clear && history -c"
+alias his="history"
+alias n="nvim"
+alias c="code"
+alias t="touch"
+alias m="mkdir"
+alias h="history"
+alias ws="winget search"
+alias wl="winget list"
+alias wi="winget install"
+alias wu="winget upgrade"
+alias wuiu="winget upgrade --include-unknown"
+alias e="explorer.exe"
+alias gac="git add -A && git commit"
+alias galias="nvim ~/.oh-my-zsh/plugins/git/git.plugin.zsh"
+alias gosrc="cd ${home}/go/src"
+
+function sd() {
+ shutdown -s -t ${1:-7000}
+}
+
 # start proxy
 proxy () {
  export https_proxy=http://127.0.0.1:2080 http_proxy=http://127.0.0.1:2080 all_proxy=socks5://127.0.0.1:2080
  echo "HTTP Proxy on"
 }
-
 # close proxy
 noproxy () {
  unset http_proxy
@@ -83,33 +107,6 @@ noproxy () {
  unset all_proxy
  echo "HTTP Proxy off"
 }
-
-# alias
-alias ~="cd ~"
-function sst() {
- shutdown -s -t ${1:-5400}
-}
-function gac() {
- git add . && git commit -m ${1:?except commit message, changes staged. }
-}
-function wi() {
- winget install ${1:?except package name. }
-}
-function wl() {
- if [ $1 ]
- then
-  winget ls -q $1
- else
-  winget ls
- fi
-}
-function wu() {
- winget upgrade ${1:=}
-}
-function ex() {
- start ${1:-.}
-}
-alias re="start ~/Releases/RandomExecutor/RandomExecutor_v1.2.11.205.exe"
 
 ```
 
