@@ -67,7 +67,7 @@ Restart zsh and enjoy it.
 
 ## User profile
 
-`nvim ~/.profile`
+`nvim ~/.user_profile`
 
 ```shell
 home="~"
@@ -90,6 +90,7 @@ alias e="explorer.exe"
 alias gac="git add -A && git commit"
 alias galias="nvim ~/.oh-my-zsh/plugins/git/git.plugin.zsh"
 alias gosrc="cd ${home}/go/src"
+alias tree="tree.com //f"
 
 function sd() {
  shutdown -s -t ${1:-7000}
@@ -121,7 +122,7 @@ noproxy () {
   eval "$(fnm env --use-on-cd)"
 
 + # Load user profile
-+ source ~/.profile
++ source ~/.user_profile
 
 + # cursor keep solid display, put into end of .zshrc
 + echo -e -n "\e[2 q"
