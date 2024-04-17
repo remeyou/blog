@@ -1,9 +1,9 @@
 # Linux server quick setup
 
 1. sudo apt update
-2. [https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH)
-3. sudo apt install -y git
-4. sudo apt install -y neovim
+2. sudo apt install -y git
+3. sudo apt install -y neovim
+4. [https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH)
 5. [https://github.com/ohmyzsh/ohmyzsh?tab=readme-ov-file#basic-installation](https://github.com/ohmyzsh/ohmyzsh?tab=readme-ov-file#basic-installation)
 6. [https://starship.rs/guide/#%F0%9F%9A%80-installation](https://starship.rs/guide/#%F0%9F%9A%80-installation)
 7. [https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#oh-my-zsh](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#oh-my-zsh)
