@@ -1,4 +1,4 @@
-# Linux server quick setup
+# Linux bash quick setup
 
 1. sudo apt update
 2. sudo apt install -y git

@@ -4,18 +4,29 @@
 
 [https://brew.sh/](https://brew.sh/)
 
-App list:
+Necessary:
 
 1. karabiner-elements
-2. iterm2
+2. tabby
 3. maccy
 4. rectangle
 5. visual-studio-code
 6. neovim
-7. scroll-reverser
+7. plantuml
 8. alt-tab
 9. mouse-fix
-10. macgesture
+
+Standby:
+
+1. intellij-idea-ce
+2. switchhosts
+3. betterdisplay
+4. dbeaver-community
+
+Alternative:
+
+1. iterm2
+2. scroll-reverser
 
 ## karabiner-elements
 
