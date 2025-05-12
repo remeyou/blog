@@ -59,6 +59,7 @@
           "from": {
             "key_code": "h",
             "modifiers": {
+              "optional": ["any"],
               "mandatory": ["right_control"]
             }
           },
@@ -73,6 +74,7 @@
           "from": {
             "key_code": "j",
             "modifiers": {
+              "optional": ["any"],
               "mandatory": ["right_control"]
             }
           },
@@ -87,6 +89,7 @@
           "from": {
             "key_code": "k",
             "modifiers": {
+              "optional": ["any"],
               "mandatory": ["right_control"]
             }
           },
@@ -101,6 +104,7 @@
           "from": {
             "key_code": "l",
             "modifiers": {
+              "optional": ["any"],
               "mandatory": ["right_control"]
             }
           },
